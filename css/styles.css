@@ -11,6 +11,7 @@ ol {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
   font-style: normal;
@@ -27,9 +28,92 @@ button {
 /* ==========GLOBAL========= */
 
 body {
-  background-color: #000;
+  background: #000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(74, 40, 0, 1) 100%
+  );
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.88;
+}
+
+.container {
+  max-width: 1168px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+/* ==========HEADER========== */
+
+.header {
+}
+.header .container {
+  max-width: 1352px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-right: 36px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 88px;
+}
+.nav-list-item {
+}
+.nav-list-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: #fa9021;
+}
+
+.contact-btn {
+  font-size: 13px;
+  border-radius: 6px;
+  width: 131px;
+  height: 41px;
+  background: #fa9021;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #e88720;
+}
+
+.contact-btn:active {
+  background-color: #c9751b;
+}
+
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  inset: -5px 0 -5px;
+  background: transparent;
 }
